@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-6c29b576-d156-4bab-82a7-4fc3679aa48d/styles.css">
+  <script src="_ds/nocturne-6c29b576-d156-4bab-82a7-4fc3679aa48d/_ds_bundle.js"></script>
+  <style>
+    body { background: var(--color-bg); }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+    .site-nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--color-bg) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--color-divider); }
+    .coc-panel { background: var(--color-surface); border-radius: var(--radius-lg); }
+  </style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;">
+
+  <header class="site-nav">
+    <nav class="nav wrap">
+      <a href="index.html" class="nav-brand" style="text-decoration:none;color:var(--color-text);display:flex;align-items:center;gap:10px;">
+        <span style="width:9px;height:9px;border-radius:50%;background:var(--color-accent);display:inline-block;"></span>
+        ASPIRE Workshop 2027
+      </a>
+      <a href="index.html">Home</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="partners.html">Partners</a>
+      <a href="committee.html">Committee</a>
+      <a href="code-of-conduct.html" aria-current="page">Code of Conduct</a>
+      <a href="index.html#register" class="btn btn-primary">Register</a>
+    </nav>
+  </header>
+
+  <div style="width:100%;height:220px;background:linear-gradient(180deg, color-mix(in srgb, var(--color-bg) 55%, transparent), var(--color-bg) 95%), url('uploads/aijcbanner.jpg') center/cover no-repeat;border-bottom:1px solid var(--color-divider);"></div>
+
+  <main style="flex:1;">
+    <section class="wrap" style="padding:72px 32px 24px;">
+      <h6 style="color:var(--color-accent);">Policy</h6>
+      <h1>Code of Conduct</h1>
+      <p class="text-muted" style="max-width:60ch;">This workshop follows the American Physical Society's Code of Conduct for meetings, derived from the APS <a href="https://www.aps.org/about/governance/policies-procedures/ethics" target="_blank" rel="noopener">Ethics Guidelines</a>.</p>
+    </section>
+
+    <section class="wrap" style="padding:0 32px 88px;">
+      <div class="coc-panel" style="padding:40px;max-width:820px;display:flex;flex-direction:column;gap:16px;">
+        <p style="opacity:0.85;">APS wishes to create a respectful atmosphere at our meetings for all attendees. APS's code of conduct for meetings is derived from our Ethics Guidelines.</p>
+        <p style="opacity:0.85;">The American Physical Society (APS)'s policy is that all participants, including attendees, vendors, APS staff, volunteers, and everyone else at APS meetings, will conduct themselves in a respectful manner that is welcoming to all participants and free from any form of discrimination, harassment, or retaliation.</p>
+        <p style="opacity:0.85;">Participants will treat each other with respect and consideration to create a collegial, inclusive, and professional environment at APS meetings. Creating a supportive environment to enable scientific discourse at APS meetings is the responsibility of all participants.</p>
+        <p style="opacity:0.85;">Participants will avoid any inappropriate actions or statements based on individual characteristics such as age, race, ethnicity, sexual orientation, gender identity, gender expression, marital status, nationality, political affiliation, ability status, educational background, or any other characteristic protected by law. Disruptive or harassing behavior of any kind will not be tolerated. Harassment includes but is not limited to inappropriate or intimidating behavior and language, unwelcome jokes or comments, unwanted touching or attention, offensive images, photography without permission, and stalking.</p>
+        <p style="opacity:0.85;">Violations of this code of conduct policy should be reported to meeting organizers. Sanctions may range from verbal warning, to ejection from the meeting, or to notifying appropriate authorities. Retaliation for complaints of inappropriate conduct will not be tolerated. If a participant observes inappropriate comments or actions and personal intervention seems appropriate and safe, they should be considerate of all parties before intervening.</p>
+        <a href="mailto:aijournalclub@lsu.edu" class="btn btn-secondary" style="margin-top:8px;width:fit-content;">Report a concern</a>
+      </div>
+    </section>
+  </main>
+
+  <footer style="border-top:1px solid var(--color-divider);">
+    <div class="wrap" style="padding:32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+      <div class="text-muted" style="font-size:13px;">LSU AI Journal Club · AI Opportunities in Science 2027</div>
+      <div style="display:flex;gap:20px;font-size:13px;">
+        <a href="code-of-conduct.html">Code of Conduct</a>
+        <a href="mailto:aijournalclub@lsu.edu">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

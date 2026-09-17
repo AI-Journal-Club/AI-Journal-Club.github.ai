@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-6c29b576-d156-4bab-82a7-4fc3679aa48d/styles.css">
+  <script src="_ds/nocturne-6c29b576-d156-4bab-82a7-4fc3679aa48d/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+  <style>
+    body { background: var(--color-bg); }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+    .site-nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--color-bg) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--color-divider); }
+    .tier-card, .logo-slot-wrap { background: var(--color-surface); border-radius: var(--radius-lg); }
+  </style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;">
+
+  <header class="site-nav">
+    <nav class="nav wrap">
+      <a href="index.html" class="nav-brand" style="text-decoration:none;color:var(--color-text);display:flex;align-items:center;gap:10px;">
+        <span style="width:9px;height:9px;border-radius:50%;background:var(--color-accent);display:inline-block;"></span>
+        ASPIRE Workshop 2027
+      </a>
+      <a href="index.html">Home</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="partners.html" aria-current="page">Partners</a>
+      <a href="committee.html">Committee</a>
+      <a href="code-of-conduct.html">Code of Conduct</a>
+      <a href="index.html#register" class="btn btn-primary">Register</a>
+    </nav>
+  </header>
+
+  <div style="width:100%;height:220px;background:linear-gradient(180deg, color-mix(in srgb, var(--color-bg) 55%, transparent), var(--color-bg) 95%), url('uploads/aijcbanner.jpg') center/cover no-repeat;border-bottom:1px solid var(--color-divider);"></div>
+
+  <main style="flex:1;">
+    <section class="wrap" style="padding:72px 32px 24px;">
+      <h6 style="color:var(--color-accent);">Get involved</h6>
+      <h1>Partnerships &amp; Sponsorship</h1>
+      <p style="max-width:60ch;opacity:0.85;">We're building relationships with national labs, industry, and funding agencies who share our interest in AI-driven science. Sponsorship helps fund travel for students and early-career researchers, and puts your organization in front of the interdisciplinary community shaping this work.</p>
+    </section>
+
+    <section class="wrap" style="padding:24px 32px 64px;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+        <div class="tier-card" style="padding:28px;">
+          <div class="card-kicker">Tier</div>
+          <h3 class="card-title" style="margin-top:8px;">Supporting</h3>
+          <p class="card-body">Logo on the workshop site and printed program; two complimentary registrations.</p>
+        </div>
+        <div class="tier-card" style="padding:28px;">
+          <div class="card-kicker">Tier</div>
+          <h3 class="card-title" style="margin-top:8px;">Partner</h3>
+          <p class="card-body">All Supporting benefits, plus a reserved exhibit table and recognition during opening remarks.</p>
+        </div>
+        <div class="tier-card" style="padding:28px;">
+          <div class="card-kicker">Tier</div>
+          <h3 class="card-title" style="margin-top:8px;">Lead</h3>
+          <p class="card-body">All Partner benefits, plus a speaking slot and top billing across all workshop materials.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" style="padding:0 32px 88px;">
+      <h6 style="color:var(--color-accent);margin-bottom:16px;">Our partners</h6>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+        <div class="logo-slot-wrap" style="padding:20px;"><image-slot id="partner-logo-1" shape="rect" placeholder="partner logo" style="width:100%;height:70px;" class="lighten"></image-slot></div>
+        <div class="logo-slot-wrap" style="padding:20px;"><image-slot id="partner-logo-2" shape="rect" placeholder="partner logo" style="width:100%;height:70px;" class="lighten"></image-slot></div>
+        <div class="logo-slot-wrap" style="padding:20px;"><image-slot id="partner-logo-3" shape="rect" placeholder="partner logo" style="width:100%;height:70px;" class="lighten"></image-slot></div>
+        <div class="logo-slot-wrap" style="padding:20px;"><image-slot id="partner-logo-4" shape="rect" placeholder="partner logo" style="width:100%;height:70px;" class="lighten"></image-slot></div>
+      </div>
+    </section>
+
+    <section style="background:var(--color-section);padding:56px 32px;">
+      <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
+        <h3 style="margin:0;max-width:36ch;">Interested in partnering with us?</h3>
+        <a href="mailto:aijournalclub@lsu.edu" class="btn btn-primary">Contact the organizers</a>
+      </div>
+    </section>
+  </main>
+
+  <footer style="border-top:1px solid var(--color-divider);">
+    <div class="wrap" style="padding:32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+      <div class="text-muted" style="font-size:13px;">LSU AI Journal Club · AI Opportunities in Science 2027</div>
+      <div style="display:flex;gap:20px;font-size:13px;">
+        <a href="code-of-conduct.html">Code of Conduct</a>
+        <a href="mailto:aijournalclub@lsu.edu">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

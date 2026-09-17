@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/nocturne-6c29b576-d156-4bab-82a7-4fc3679aa48d/styles.css">
+  <script src="_ds/nocturne-6c29b576-d156-4bab-82a7-4fc3679aa48d/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+  <style>
+    body { background: var(--color-bg); }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+    .site-nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--color-bg) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--color-divider); }
+    .pillar-card, .topic-card, .info-card { background: var(--color-surface); border-radius: var(--radius-lg); }
+  </style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;">
+
+  <header class="site-nav">
+    <nav class="nav wrap">
+      <a href="index.html" class="nav-brand" style="text-decoration:none;color:var(--color-text);display:flex;align-items:center;gap:10px;">
+        <span style="width:9px;height:9px;border-radius:50%;background:var(--color-accent);display:inline-block;"></span>
+        ASPIRE Workshop 2027
+      </a>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="partners.html">Partners</a>
+      <a href="committee.html">Committee</a>
+      <a href="code-of-conduct.html">Code of Conduct</a>
+      <a href="index.html#register" class="btn btn-primary">Register</a>
+    </nav>
+  </header>
+
+  <img src="uploads/aijcbanner.jpg" alt="LSU Interdisciplinary AI Journal Club" style="width:100%;height:auto;display:block;border-bottom:1px solid var(--color-divider);">
+
+  <main style="flex:1;">
+
+    <section class="wrap" style="padding:88px 32px 72px;display:grid;grid-template-columns:1.15fr 0.85fr;gap:56px;align-items:center;">
+      <div>
+        <div class="tag tag-outline" style="margin-bottom:20px;display:inline-block;height:auto;white-space:normal;line-height:1.5;padding:6px 12px;">Feb 19–20, 2027 · Our Lady of the Lake Interdisciplinary Science Building, LSU</div>
+        <h1 style="font-size:52px;max-width:14ch;">AI Opportunities in Science: Partnerships, Interdisciplinary Research and Education</h1>
+        <p style="font-size:17px;max-width:52ch;opacity:0.85;">A one-and-a-half-day workshop bringing together researchers at every career stage across LSU College of Science departments — and interested colleagues from Computer Science, CCT, and the College of Education — active or interested in AI/ML-related research.</p>
+        <div style="display:flex;gap:12px;margin-top:28px;">
+          <a href="#register" class="btn btn-primary">Register interest</a>
+          <a href="schedule.html" class="btn btn-secondary">View schedule</a>
+        </div>
+      </div>
+      <image-slot id="hero-photo" shape="rounded" radius="14" placeholder="hero photo — lab / campus / AI+science collaboration" style="width:100%;height:360px;" class="lighten"></image-slot>
+    </section>
+
+    <section class="wrap" style="padding:0 32px 48px;">
+      <div class="info-card" style="padding:28px;max-width:820px;">
+        <h6 style="color:var(--color-accent);margin-bottom:10px;">Synopsis</h6>
+        <p style="opacity:0.85;margin:0;">This workshop aims to bring together researchers at every career stage, active or interested in pursuing AI/ML-related research across departments of the LSU College of Science. Participation may be extended to specific departments of other colleges — e.g. Computer Science, CCT, and the College of Education.</p>
+      </div>
+    </section>
+
+    <section class="wrap" style="padding:0 32px 48px;">
+      <div class="info-card" style="padding:28px;max-width:820px;">
+        <h6 style="color:var(--color-accent);margin-bottom:10px;">Organizers</h6>
+        <p style="opacity:0.85;margin:0;"><a href="https://www.lsu.edu/science/news_events/ai-journal-club.php" target="_blank" rel="noopener">LSU AI Journal Club</a> as the primary driving force, with volunteers from each department and interested parties.</p>
+      </div>
+    </section>
+
+    <section class="wrap" style="padding:24px 32px 80px;">
+      <h6 style="color:var(--color-accent);margin-bottom:12px;">Why this workshop</h6>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+        <div class="pillar-card" style="padding:28px;">
+          <div class="card-kicker">01</div>
+          <h3 class="card-title" style="margin-top:8px;">Partnerships</h3>
+          <p class="card-body">Connecting university researchers with national labs, industry, and funding agencies to scale AI-driven science beyond any one lab.</p>
+        </div>
+        <div class="pillar-card" style="padding:28px;">
+          <div class="card-kicker">02</div>
+          <h3 class="card-title" style="margin-top:8px;">Interdisciplinary Research</h3>
+          <p class="card-body">Pairing domain scientists with AI researchers to tackle problems in physics, biology, and earth science that neither could solve alone.</p>
+        </div>
+        <div class="pillar-card" style="padding:28px;">
+          <div class="card-kicker">03</div>
+          <h3 class="card-title" style="margin-top:8px;">Education</h3>
+          <p class="card-body">Building coursework, training, and mentorship that prepares the next generation of scientists to use AI fluently and responsibly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" style="padding:0 32px 80px;">
+      <h2>Workshop topics</h2>
+      <p class="text-muted" style="max-width:60ch;margin-bottom:28px;">Sessions and discussions will span:</p>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+        <div class="topic-card" style="padding:18px;"><p class="card-title" style="font-size:15px;">Foundation Models for Scientific Discovery</p></div>
+        <div class="topic-card" style="padding:18px;"><p class="card-title" style="font-size:15px;">AI for Physics &amp; Astronomy</p></div>
+        <div class="topic-card" style="padding:18px;"><p class="card-title" style="font-size:15px;">AI for Biology, Chemistry &amp; Materials</p></div>
+        <div class="topic-card" style="padding:18px;"><p class="card-title" style="font-size:15px;">Scientific Machine Learning &amp; Simulation</p></div>
+        <div class="topic-card" style="padding:18px;"><p class="card-title" style="font-size:15px;">Responsible &amp; Trustworthy AI</p></div>
+        <div class="topic-card" style="padding:18px;"><p class="card-title" style="font-size:15px;">Data, Compute &amp; Research Infrastructure</p></div>
+        <div class="topic-card" style="padding:18px;"><p class="card-title" style="font-size:15px;">Funding Models for AI–Science Partnerships</p></div>
+        <div class="topic-card" style="padding:18px;"><p class="card-title" style="font-size:15px;">AI Literacy &amp; Curriculum Design</p></div>
+      </div>
+    </section>
+
+    <section style="background:var(--color-section);padding:72px 32px;">
+      <div class="wrap" style="max-width:820px;">
+        <h2 style="font-size:30px;">Interdisciplinary AI–science research is a partnership problem as much as a technical one.</h2>
+        <p style="opacity:0.8;font-size:16px;">This workshop exists to build the relationships — across departments, institutions, and funding agencies — that make that research possible.</p>
+      </div>
+    </section>
+
+    <section id="register" class="wrap" style="padding:80px 32px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:48px;">
+      <div>
+        <h6 style="color:var(--color-accent);">Registration</h6>
+        <h2>Join us Feb 19–20, 2027</h2>
+        <p style="max-width:52ch;opacity:0.85;">Registration opens soon. Leave your details and we'll notify you as soon as it's live, along with the finalized agenda and speaker list.</p>
+        <form style="max-width:420px;margin-top:20px;display:flex;flex-direction:column;gap:14px;">
+          <div class="field">
+            <label for="email">Email address</label>
+            <input class="input" type="email" id="email" placeholder="you@university.edu">
+          </div>
+          <div class="field">
+            <label for="affil">Affiliation</label>
+            <input class="input" type="text" id="affil" placeholder="Department / institution">
+          </div>
+          <button type="button" class="btn btn-primary btn-block">Notify me</button>
+        </form>
+      </div>
+      <div class="info-card" style="padding:28px;height:fit-content;">
+        <h4>Event details</h4>
+        <div style="display:flex;flex-direction:column;gap:14px;margin-top:16px;font-size:14px;">
+          <div><div class="text-muted" style="font-size:11px;text-transform:uppercase;letter-spacing:0.08em;">Host</div>LSU AI Journal Club</div>
+          <div><div class="text-muted" style="font-size:11px;text-transform:uppercase;letter-spacing:0.08em;">Dates</div>February 19–20, 2027</div>
+          <div><div class="text-muted" style="font-size:11px;text-transform:uppercase;letter-spacing:0.08em;">Location</div>Our Lady of the Lake Interdisciplinary Science Building, LSU</div>
+          <div><div class="text-muted" style="font-size:11px;text-transform:uppercase;letter-spacing:0.08em;">Contact</div><a href="mailto:aijournalclub@lsu.edu">aijournalclub@lsu.edu</a></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="border-top:1px solid var(--color-divider);">
+    <div class="wrap" style="padding:32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+      <div class="text-muted" style="font-size:13px;">LSU AI Journal Club · AI Opportunities in Science 2027</div>
+      <div style="display:flex;gap:20px;font-size:13px;">
+        <a href="code-of-conduct.html">Code of Conduct</a>
+        <a href="mailto:aijournalclub@lsu.edu">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>
