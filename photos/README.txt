@@ -10,7 +10,7 @@ jordan-dowell.jpg
 hanyu-wei.jpg
 jonathan-snow.jpg
 xiaoliang-wan.jpg
-scott-baldridge.jpg
+scott-baldridge.png
 keith-mills.jpg
 phong-dang.jpg
 maganizo-kapita.jpg
