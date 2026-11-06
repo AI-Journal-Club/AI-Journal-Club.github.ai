@@ -11,6 +11,7 @@ hanyu-wei.jpg
 jonathan-snow.jpg
 xiaoliang-wan.jpg
 scott-baldridge.png
+scott-baldridge.jpg
 keith-mills.jpg
 phong-dang.jpg
 maganizo-kapita.jpg
