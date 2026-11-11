@@ -767,7 +767,7 @@ textarea.input { min-height: 90px; resize: vertical; }
      
       <div>
         <h6 style="color:var(--color-accent);margin-bottom:10px;">Questions</h6>
-        <p style="color:var(--color-neutral-200);margin:0 0 14px;max-width:42ch;">Please direct all general questions to the LSU AI Club.</p>
+        <p style="color:var(--color-neutral-200);margin:0 0 14px;max-width:42ch;">Please direct all general questions to the ASPIRE Workshop co-chairs</p>
         <form id="contact-form" style="display:flex;flex-direction:column;gap:10px;max-width:420px;">
           <div class="field" style="display:flex;flex-direction:column;gap:4px;">
             <label for="cf-email">Email</label>
@@ -866,6 +866,19 @@ function setupHero(c) {
   route();
   document.querySelectorAll('.hero-canvas').forEach(setupHero);
 })();
+<script>
+(function(){
+  var CO_CHAIRS = ['pdang5@lsu.edu','jkapit1@lsu.edu']; 
+  var f = document.getElementById('contact-form'); if(!f) return;
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var from = f.email.value.trim(), subj = f.subject.value.trim(), msg = f.message.value.trim();
+    var body = msg + '\n\n— From: ' + from;
+    window.location.href = 'mailto:' + CO_CHAIRS.join(',') + '?subject=' + encodeURIComponent('[ASPIRE 2027] ' + subj) + '&body=' + encodeURIComponent(body);
+    document.getElementById('cf-status').textContent = 'Opening your email app…';
+  });
+})();
 </script>
+
 </body>
 </html>
